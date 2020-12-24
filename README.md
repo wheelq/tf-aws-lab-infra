@@ -7,7 +7,7 @@ Create customised VPCs with subnets and routing for lab purposes
 data "aws_availability_zones" "available" {}
 
 module "simple_vpc" {
-  source                     = "github.com/wheelq/tf-aws-beta?ref=v0.1"
+  source                     = "github.com/wheelq/tf-aws-lab-infra?ref=v0.1"
   name                       = var.name
   cidr_block                 = var.cidr_block
   enable_dns_support         = var.enable_dns_support
